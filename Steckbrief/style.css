@@ -1,0 +1,18 @@
+body {
+	font-family: 'Courier New', Courier, monospace;
+	font-size:medium;
+	padding-left: 2%;
+	padding-top: 2%;
+	background: black;
+	line-height: 120%;
+}
+
+a{
+	text-decoration: none;
+	color: white;
+	font-size: normal;
+}
+
+a:hover{
+	color:#f30202;
+}
