@@ -1,0 +1,12 @@
+div {
+    height: 400px;
+    width: 300px;
+    background-color: grey;
+    display: inline-flex;
+    margin-left: 10%;
+}
+
+span {
+    background-color: lightgray;
+    position: fixed;
+}
