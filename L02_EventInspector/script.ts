@@ -42,14 +42,14 @@ namespace EventInspector {
         console.log("Event Object: ", _event);
     }
 
-    const button = document.querySelector('button') as HTMLButtonElement;
+    const button = document.querySelector("button") as HTMLButtonElement;
 
-    button.addEventListener('click', function (_event) {
-        const customevent = new CustomEvent('click');
+    button.addEventListener("click", function (_event) {
+        const customevent = new CustomEvent();
         button.dispatchEvent(customevent);
     });
 
-    document.addEventListener('click', function() {
+    document.addEventListener("click", function() {
         console.log("Hello World")
     });
 }
