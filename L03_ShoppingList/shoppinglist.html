@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShoppingList</title>
+    <script src="shoppinglist.js"></script>
+    <link rel="stylesheet" href="shoppinglist.css">
+</head>
+
+<body>
+    <main>
+        <div class="container">
+        <h2 class="shoppinglist">Shopping List</h2>
+        <fieldset>
+            <legend>Item Details </legend><br>
+            <input id="additem" placeholder="add item">
+            <input id="amount" type="number" placeholder="amount">
+            <input id="date" type="date"><br><br>
+            <textarea id="comment" name="comment" placeholder="comment" rows="3" cols="40"></textarea><br>
+            <button id="addbutton">add</button>
+        </fieldset><br>
+        <fieldset>
+            <legend>Items list</legend>
+            <ul id="ItemsList">
+                <li>
+                    <input type="checkbox" id="check">
+                    <label id="listtext">2 bananas</label>
+                    <i id="trash" class="fa-solid fa-trash"></i>
+                </li>
+            </ul>
+        </fieldset>
+        </div>
+    </main>
+</body>
+
+</html>

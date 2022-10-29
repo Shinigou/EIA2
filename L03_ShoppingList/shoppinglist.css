@@ -1,0 +1,56 @@
+body{
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+h2{
+    text-align: center;
+}
+
+fieldset{
+    background-color: #f3f3f3;
+    width: 380px;
+    margin-left: 20px;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.container{
+    position: relative;
+    justify-content: center;
+    width: 450px;
+    height: 667px;
+    margin: 75px auto;
+    border-style: groove;
+    background-color: ;
+}
+
+#addbutton{
+    background-color: lightgrey;
+    display:inline-block;
+	margin:10px;
+	font-size: 16px;
+	border: 2px solid;
+	border-radius: 6px;
+	color: grey;
+	padding:3px 8px;
+
+}
+
+#amount{
+    background-color: rgb(229, 229, 229);
+}
+#additem{
+    background-color: rgb(229, 229, 229);
+}
+#comment{
+    background-color: rgb(229, 229, 229);
+}
+
+.trash{
+    opacity: 0.5;
+    position: absolute;
+    right: 30px;   
+}
+  
