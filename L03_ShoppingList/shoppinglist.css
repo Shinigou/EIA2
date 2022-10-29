@@ -47,10 +47,3 @@ ul{
 #comment{
     background-color: rgb(229, 229, 229);
 }
-
-.trash{
-    opacity: 0.5;
-    position: absolute;
-    right: 30px;   
-}
-  
