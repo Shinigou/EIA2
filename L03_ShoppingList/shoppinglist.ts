@@ -10,9 +10,11 @@ namespace shoppinglist {
     window.addEventListener("load", hndlaod);
 
     function hndlaod(): void{
+        const form = document.querySelector("form") as HTMLButtonElement;
+        
         document.querySelector("#addbutton").addEventListener("click", newlistelement);
-        document.querySelector("#pen").addEventListener("click", editlistelement);
-        document.querySelector("#trash").addEventListener("click", deletelistelement);
+        document.querySelector("#editpen").addEventListener("click", editlistelement);
+        document.querySelector("#trashcan").addEventListener("click", deletelistelement);
         document.querySelector("#check").addEventListener("click", checklistelement);
     }
     function newlistelement(): void {
