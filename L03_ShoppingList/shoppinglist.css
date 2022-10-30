@@ -16,6 +16,18 @@ ul{
     list-style-type: none;
 }
 
+li{
+    margin-left: -20px;
+}
+
+textarea{
+    resize: none; 
+}
+
+.date{
+    margin-left: 120px;
+}
+
 .container{
     position: relative;
     justify-content: center;
@@ -47,10 +59,11 @@ ul{
     background-color: rgb(229, 229, 229);
 }
 
-.fa-trash{
-    
-} 
-
 .fa-pen{
     margin-left: 170px;
 }
+
+.fa-trash{
+    margin: 13px;
+} 
+

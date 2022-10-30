@@ -9,14 +9,13 @@ Quellen: Orientiert an Lisa Blindenhöfer
 namespace shoppinglist {
     window.addEventListener("load", hndlaod);
 
-    function hndlaod(): void{
-        const form = document.querySelector("form") as HTMLButtonElement;
-        
-        document.querySelector("#addbutton").addEventListener("click", newlistelement);
-        document.querySelector("#editpen").addEventListener("click", editlistelement);
-        document.querySelector("#trashcan").addEventListener("click", deletelistelement);
-        document.querySelector("#check").addEventListener("click", checklistelement);
+    function hndlaod(): void {
+        document.querySelector("#addbutton")?.addEventListener("click", newlistelement);
+        document.querySelector(".fa-pen")?.addEventListener("click", editlistelement);
+        document.querySelector(".fa-trash")?.addEventListener("click", deletelistelement);
+        document.querySelector("#check")?.addEventListener("click", checklistelement);
     }
+
     function newlistelement(): void {
         console.log("click on button: create new list element including item, amount, comment and date");
     }
@@ -29,5 +28,4 @@ namespace shoppinglist {
     function checklistelement(): void {
         console.log("list element checked");
     }
-
 }
