@@ -1,10 +1,10 @@
 "use strict";
 /*
-Aufgabe: Aufg 03 Shopping List
+Aufgabe: Aufg 04 Shopping List Data Structure
 Name: Gerrit Sudarbo
 Matrikel: 269362
-Datum: 29.10.2022
-Quellen: Orientiert an Lisa Blindenhöfer
+Datum: 05.11.2022
+Quellen: Reck Henning, Yannik König
 */
 var shoppinglist;
 (function (shoppinglist) {
