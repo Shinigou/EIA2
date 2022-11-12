@@ -9,20 +9,30 @@ Quellen: Reck Henning, Yannik König
 var shoppinglist;
 (function (shoppinglist) {
     window.addEventListener("load", hndlaod);
+    let newDate = new Date();
+    shoppinglist.currentDate = newDate.getDate() + "." + newDate.getMonth() + "." + newDate.getFullYear();
     function hndlaod() {
         document.querySelector("#addbutton")?.addEventListener("click", newlistelement);
-        document.querySelector(".fa-pen")?.addEventListener("click", editlistelement);
-        document.querySelector(".fa-trash")?.addEventListener("click", deletelistelement);
         document.querySelector("#check")?.addEventListener("click", checklistelement);
+        for (let i = 0; i < shoppinglist.data.Liste.length; i++) {
+            shoppinglist.addListElement(shoppinglist.data.Liste[i].newItem, shoppinglist.data.Liste[i].amount, shoppinglist.data.Liste[i].comment, shoppinglist.data.Liste[i].date);
+        }
     }
+    //Form Data wird ausgelesen und dann übergeben in function editlistelement
     function newlistelement() {
-        console.log("click on button: create new list element including item, amount, comment and date");
-    }
-    function editlistelement() {
-        console.log("list element edited");
-    }
-    function deletelistelement() {
-        console.log("list element deleted");
+        let formData = document.getElementById("form");
+        let dataForm = new FormData(formData);
+        let itemName = `${dataForm.get("additem")}`;
+        let amount = parseInt(`${dataForm.get("amount")}`);
+        let comment = `${dataForm.get("comment")}`;
+        let dataItem = {
+            newItem: itemName,
+            amount: amount,
+            comment: comment,
+            date: shoppinglist.currentDate
+        };
+        shoppinglist.data.Liste.push(dataItem);
+        shoppinglist.addListElement(itemName, amount, comment, shoppinglist.currentDate);
     }
     function checklistelement() {
         console.log("list element checked");

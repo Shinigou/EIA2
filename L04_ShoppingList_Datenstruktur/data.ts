@@ -4,18 +4,17 @@ namespace shoppinglist {
     newItem: string;
     amount: number;
     comment: string;
+    date: string; 
   }
 
   export interface Data {
-    [itemNumber: number]: ItemAdded[]; 
-}
+    [name: string]: ItemAdded[];
+  }
 
-export let data: Data = {
-    1: [
-        { newItem: "bananas", amount: 1, comment: "schön gelb"}
-    ], 
-    2: [
-        { newItem: "apples", amount: 1, comment: "knackig"}
+  export let data: Data = {
+    Liste: [
+      { newItem: "bananas", amount: 1, comment: "schön gelb", date: "12.11.2022" },
+      { newItem: "apples", amount: 1, comment: "knackig", date: "12.11.2022" }
     ]
-}; 
+  };
 }
