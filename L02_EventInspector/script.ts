@@ -8,7 +8,7 @@ Quellen: Orientiert an Jason Hühne
 
 namespace EventInspector {
     window.addEventListener("load", hndLoad);
-    
+
     function hndLoad(_event: Event): void {
         let div0: HTMLDivElement = <HTMLDivElement>document.querySelector("#div0");
         let div1: HTMLDivElement = <HTMLDivElement>document.querySelector("#div1");
@@ -42,14 +42,9 @@ namespace EventInspector {
         console.log("Event Object: ", _event);
     }
 
-    const button = document.querySelector("button") as HTMLButtonElement;
 
-    button.addEventListener("click", function (_event) {
-        const customevent = new CustomEvent();
-        button.dispatchEvent(customevent);
-    });
 
-    document.addEventListener("click", function() {
+    document.addEventListener("click", function () {
         console.log("Hello World")
     });
 }

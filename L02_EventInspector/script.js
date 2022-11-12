@@ -38,11 +38,6 @@ var EventInspector;
         console.log("Current Target: ", _event.currentTarget);
         console.log("Event Object: ", _event);
     }
-    const button = document.querySelector("button");
-    button.addEventListener("click", function (_event) {
-        const customevent = new CustomEvent();
-        button.dispatchEvent(customevent);
-    });
     document.addEventListener("click", function () {
         console.log("Hello World");
     });
